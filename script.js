@@ -10,11 +10,14 @@ const saveButton = document.getElementById("btn");
 // Get reference to the table body where new rows will be added
 const studentTableBody = document.getElementById("studentTableBody");
 const tableContainer = document.getElementById("tableContainer"); // To potentially show/hide the table
-
+const tablebody = document.querySelector(".table2__content1")
 // Add event listener to the Save button
 saveButton.addEventListener("click", function(event) {
     // Prevent default form submission if the button type was "submit"
     // event.preventDefault(); // Not strictly needed since type="button"
+
+
+    tablebody.classList.add("table2__content")
 
     // Get values from form inputs
     const name = nameInput.value.trim(); // .trim() removes leading/trailing whitespace
