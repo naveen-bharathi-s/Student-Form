@@ -33,14 +33,14 @@ h1 {
 .mainBox__table__Data th {
     padding: 15px;
     vertical-align: top;
-    width: 30%;
+    width: 20%;
     text-align: center;
     color: black;
 }
 
 .mainBox__table__Data td{
     padding: 10px;
-    width: 70%;
+    width: 60%;
 }
 
 .mainBox__btn {
@@ -56,7 +56,7 @@ h1 {
 }
 
 .table2{
-    display: block;
+    /* display: block; */
     width: 95%;
     max-width: 800px;
     margin: 5px auto;
@@ -69,26 +69,22 @@ h1 {
     width: 100%;
     border-collapse: collapse;
     min-width: 400px;
+    display: table;
 }
-.table2__content th, .table2__content tb{
+.table2__content th, .table2__content td{
     padding: 10px;
     border: 1px solid black;
     text-align: left;
     white-space: nowrap;
+    display: table-cell;
 }
 #tableHead tr{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 5px;
     background: rgba(0, 0, 0, 0.2);
     display: table-row;
 }
 #studentTableBody tr{
      display: table-row;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 5px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
