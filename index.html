@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <!-- style -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<!-- Main Box -->
+<body>
+    <div class="mainBox">
+        <h1>Student Form</h1>
+        <form class="mainBox__form">
+            <table class="mainBox__table">
+                <tr class="mainBox__table__Data">
+                    <th><label for="Name">Name:</label></th>
+                    <td><input type="text" id="Name" placeholder="Enter Name" required></td>
+                </tr>
+                <tr class="mainBox__table__Data">
+                    <th><label for="age">Age:</label></th>
+                    <td><input type="number" id="Age" placeholder="Enter Age" required></td>
+                </tr>
+                <tr class="mainBox__table__Data">
+                    <th><label for="Gender">Gender:</label></th>
+                    <td>
+                        <input type="radio" name="Gender" value="male" id="male" required aria-required="true">
+                        <label for="Gender"></label>Male</label>
+                        <input type="radio" name="Gender" value="female" id="female" aria-required="true">
+                        <label for="Gender"></label>Female</label>
+                    </td>
+                </tr>
+                <tr class="mainBox__table__Data">
+                    <th><label for="Course">Course:</label></th>
+                    <td>
+                        <select name="Programming" style="width: 100%;" required aria-required="true" id="Course">
+                            <option value="" selected hidden>--None--</option>
+                            <option value="Java">Java</option>
+                            <option value="C">C</option>
+                            <option value="C#">C#</option>
+                            <option value="C++">C++</option>
+                            <option value="Python">Python</option>
+                            <option value="Javascript">Javascript</option>
+                            <option value="PHP">PHP</option>
+                            <option value="Node.js">Node.js</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="mainBox__table__Data">
+                    <th><label for="Email">Email:</label></th>
+                    <td><input type="email" id="Email" placeholder="Enter Email" required></td>
+                </tr>
+            </table>
+            <button id="btn" type="button" class="mainBox__btn">Save</button>
+        </form>
+
+        <br>
+
+        <div id="tableContainer" class="table2">
+            <table id="studentTable" class="table2__content">
+                <thead id="tableHead">
+                    <tr>
+                        <th><label for="Name">Name</label></th>
+                        <th><label for="age">Age</label></th>
+                        <th><label for="Gender">Gender</label></th>
+                        <th><label for="Course">Course</label></th>
+                        <th><label for="Email">Email</label></th>
+                        <th><label for="Action">Action</label></th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody"> </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>

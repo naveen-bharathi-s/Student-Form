@@ -1,0 +1,502 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <script>
+
+        let guess = Math.floor(Math.random() * 10) + 1
+        let count = 0
+
+        while (true) {
+
+            let userInput = prompt("Guess a number 1 to 10")
+            count++
+
+            if (guess == userInput) {
+                alert("You guessed it rite, " + "attempt:" + count)
+                break;
+            }
+            else if (guess < userInput) {
+                alert("too high")
+            }
+            else {
+                alert("too low")
+            }
+
+        }
+
+    </script>
+</body>
+
+</html> -->
+
+
+
+<!-- <script>
+let a = 0
+for(let i=100; i>1;){
+    i=Math.floor(i/2)
+    a++
+    console.log(i)
+}
+console.log(a)
+</script> -->
+
+
+
+<!-- <script>
+    let a=1234567
+    let count=0
+    while(a!=0){
+        a= Math.floor(a/10)
+        count++
+    }
+    console.log(count)
+</script> -->
+
+
+<!-- <p id="one">Hello</p>
+<p id="two">bye</p>
+
+<script>
+    let firstPara=document.getElementById("one")
+    firstPara.textContent="Hello World"
+
+    let secondPara=document.getElementById("two")
+    secondPara.textContent="Hi"
+</script> -->
+
+<!-- <h1 id="title">Hello World</h1>
+
+<script>
+    let heading = document.getElementById("title")
+    heading.textContent = "Bye World"
+</script> -->
+
+
+<!-- <h2 class="three">i am going to roll the world</h2>
+<div class="one">hi</div>
+<h2 id="two">world</h2>
+
+
+<script>
+   console.log(document.querySelector("h2"))
+    
+</script> -->
+
+<!-- <div id="title">
+<h1>Hello World</h1>
+<p>bye</p>
+</div>
+
+<script>
+    let heading = document.getElementById("title")
+   heading.innerHTML = "bue"
+</script> -->
+
+<!-- <div id="container">
+    <p id="paragraph1">This is the first paragraph</p>
+    <p id="paragraph2">This is the second paragraph</p>
+    <p id="paragraph3">This is the third paragraph</p>
+    <ul>
+        <li>item 1</li>
+        <li class="special">item 2</li>
+        <li>item 3</li>
+    </ul>
+    <div id="myDiv"></div>
+
+
+ </div>
+
+ <script>
+    let secondpara = document.getElementById("paragraph2")
+    console.log(secondpara.textContent)
+
+    let thirdpara = document.getElementById("paragraph3")
+    thirdpara.textContent="Updated text content!"
+
+    let div2 = document.getElementById("myDiv")
+    div2.innerHTML = "<strong>This is bold text</strong>"
+
+    let secondItem = document.querySelector(".special")
+    console.log(secondItem.textContent)
+ </script> -->
+
+<!-- <style>
+    .end{
+        background: orange;
+    }
+ </style>
+ <p id="special" >Elevan</p>
+
+ <script>
+    // console.log(document.getElementById("special"))
+    let para = document.getElementById("special")
+    para.setAttribute("class","end")
+    para.removeAttribute("id","special")
+ </script> -->
+
+
+<!-- <h4>Style change</h4>
+ <script>
+    let style = document.querySelector("h4")
+    style.style.color = "orange"
+    style.style.backgroundColor="red"
+ </script> -->
+
+<!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ </head>
+ <body>
+    <button onclick="clicked()">Click</button>
+    <script>
+        let body = document.querySelector("body")
+        function clicked(){
+            body.style.backgroundColor="red"
+        }
+    </script>
+ </body>
+ </html> -->
+
+
+<!-- <body onkeypress="keypressed(event)">
+
+</body>
+
+<script>
+    function keypressed(event) {
+        alert(event.key)
+
+    }
+
+</script> -->
+
+<!-- <button onclick="keypressed(event)">button 1</button>
+<button onclick="keypressed(event)">button 2</button>
+<button onclick="keypressed(event)">button 3</button>
+
+<script>
+    function keypressed(event) {
+        alert(event.target.textContent)
+    }
+
+</script> -->
+
+
+<!-- <input type="number" placeholder="number 1" id="num1">
+<br>
+<input type="number" placeholder="number 2" id="num2">
+<br>
+<button id="btn" onclick="add()">add</button>
+
+<h1 id="result">Result is:</h1>
+
+<script>
+    function add(){
+        
+        let a = Number(document.getElementById("num1").value) + Number(document.getElementById("num2").value)
+        console.log(document.getElementById("result").textContent = "Result is: "+a) 
+        // document.getElementById("result").textContent = "Result is: "+a
+        
+    }
+</script> -->
+
+
+<!-- <input type="text" id="inputBox" onkeyup="update()" placeholder="What ever you want">
+<h1 id="result"></h1>
+
+<script>
+    let input = document.getElementById("inputBox")
+    let result = document.getElementById("result")
+    function update(){
+        result.textContent = input.value
+
+    }
+</script> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+</head>
+<body>
+    <h1>Guess the Number from 1 to 5</h1>
+    <input type="number" id="inputBox" placeholder="EnterNo Between 1 to 5" required>
+    <button id="btn" onclick="checkNumber() ">Check</button>
+    <p id="result"></p>
+    <p id="guesscount">Available Guess : 3</p>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- Script.js -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Game</title>
+</head>
+<body>
+    <h1>Guess the Number Between 1 to 5:</h1>
+    <input type="number" id="inputNumber" placeholder="Enter Number below 5">
+    <button id="btn" >Check</button>
+    <p id="result"></p>
+    <p id="guessRemaining">Available Guess : 3</p>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+<!-- <style>
+    .bg-color{
+        background: red;
+        width: 100px;
+        height: 100px;
+    }
+    .black{
+        background: black;
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+
+<div class="bg-color"></div>
+<button class="change1">Change Color</button>
+<button class="change2">remove Color</button>
+<script>
+    let bg = document.querySelector(".bg-color")
+    let change1 = document.querySelector(".change1")
+    let change2 = document.querySelector(".change2")
+    change1.addEventListener("click", function(){
+          bg.classList.add("black")
+    })
+    change2.addEventListener("click", function(){
+          bg.classList.remove("black")
+     })
+</script> -->
+
+
+
+
+
+
+
+<!-- pop-up content -->
+
+<!-- <style>
+    .dis {
+        background-color: black;
+        color: white;
+        width: 300px;
+        padding: 20px;
+        margin-top: 70px;
+        margin-left: 470px;
+        position: relative;
+        z-index: 2;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .outer {
+        background: gray;
+        opacity: 0.8;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+</style>
+<button id="btn">Pop-up</button>
+<div class="outer hidden"></div>
+<div class="dis hidden">
+    <h3 style="cursor: pointer; text-align: right; padding-top: 0px;" id="close">X</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat possimus molestias ullam odio earum praesentium
+        quo! Adipisci necessitatibus, magni consectetur eligendi nobis laboriosam officia natus tempore fugiat
+        voluptatem aliquam autem molestias corporis modi quis dolorum veniam minus quia sequi quibusdam odit veritatis
+        qui sed ipsam! At ipsam sit enim doloribus nostrum earum sed eveniet atque incidunt quos voluptate, assumenda
+        deserunt minima quibusdam, labore laborum voluptates amet architecto autem laudantium nihil dolorum esse totam
+        cum. Sit officiis vel necessitatibus, consequuntur eos excepturi eius tenetur quam laboriosam earum molestiae
+        nulla commodi! A sequi iusto praesentium soluta vel, veritatis atque accusamus officiis ea?</p>
+</div>
+
+<script>
+
+    let pop = document.querySelector(".dis")
+    let click = document.getElementById("btn")
+    let close = document.getElementById("close")
+    let hidden = document.querySelector(".hidden")
+    let outer = document.querySelector(".outer")
+
+    click.addEventListener("click", function () {
+        pop.classList.remove("hidden")
+        outer.classList.remove("hidden")
+
+    })
+
+    close.addEventListener("click", function () {
+        pop.classList.add("hidden")
+        outer.classList.add("hidden")
+    })
+
+
+</script> -->
+
+
+
+
+
+<!-- do to list -->
+<!-- <button id="btn">Add</button>
+<div id="print">
+
+</div>
+<script>
+
+
+
+    let print = document.getElementById("print")
+    let btn = document.getElementById("btn")
+    btn.addEventListener("click", function () {
+        let p = document.createElement("p")
+        p.textContent = "I create one paragraph element"
+        console.log(p)
+        print.append(p)
+
+    })
+</script>-->
+
+<!-- <button id="dlt">Delete</button>
+<h1 id="heading">one</h1>
+<h2>Two</h2>
+
+<script>
+    let heading = document.getElementById("heading")
+    let dlt = document.getElementById("dlt")
+    dlt.addEventListener("click", function () {
+        heading.remove()
+    })
+
+</script> -->
+
+<!-- <div id="head">
+<h1 id="one" onclick="itemDelete(event)">One</h1>
+<h1 id="Two" onclick="itemDelete(event)">Two</h1>
+<h1 id="Three" onclick="itemDelete(event)">Three</h1>
+<h1 id="Four" onclick="itemDelete(event)">Four</h1>
+<h1 id="Five" onclick="itemDelete(event)">Five</h1>
+<h1 id="Six" onclick="itemDelete(event)">Six</h1>
+</div>
+
+<script>
+
+    let one = document.getElementById("one")
+    // one.parentElement.remove()
+    one.closest("#head").remove()
+
+    // function itemDelete(event){
+    //     event.target.remove()
+
+    // }
+        
+</script> -->
+
+
+<!-- <input type="text" id="inputBox">
+<button id="btn">Add</button>
+<ul id="container">
+    <li>hello
+    <button onclick="deleteItem(event)">delete</button>
+    </li>
+</ul>
+
+<script>
+    let inputBox = document.getElementById("inputBox")
+    let btn = document.getElementById("btn")
+    let container = document.getElementById("container")
+    btn.addEventListener("click", function(){
+        let li=document.createElement("li")
+        li.innerHTML = inputBox.value + "<button onclick=deleteItem(event)>delete</button>"
+        container.append(li)
+    })
+    function deleteItem(event){
+        event.target.parentElement.remove()
+    }
+</script> -->
+
+.getElementsByTagName("tbody")[0];
+
+// Get gender
+    let gender = Male.checked ? "Male" : (Female.checked ? "Female" : "Other")
+
+    // 
+    let tr = document.createElement("tr")
+
+    // Name
+    let tdName = document.createElement("td")
+    tdName.textContent = Name.value 
+    tr.appendChild(tdName)
+
+    // Age
+    let tdAge = document.createElement("td")
+    tdAge.textContent = Age.value 
+    tr.appendChild(tdAge)
+
+    // Gender
+    let tdGender = document.createElement("td")
+    tdGender.textContent = gender 
+    tr.appendChild(tdGender)
+
+    // Course
+    let tdCourse = document.createElement("td")
+    tdCourse.textContent = Course.value 
+    tr.appendChild(tdCourse)
+
+    // Email
+    let tdEmail = document.createElement("td")
+    tdEmail.textContent = Email.value 
+    tr.appendChild(tdEmail)
+
+    // Action (Delete Button)
+
+    let tdAction = document.createElement("td")
+    let btnDelete = document.createElement("button")
+    btnDelete.textContent="Delete"
+    btnDelete.onclick=deleteItem
+    tdAction.appendChild(btnDelete)
+    tr.appendChild(tdAction)
+
+
+    container2.appendChild(tr)
+
+    // append
+    Name.value=""
+    Age.value=""
+    Male.checked=false
+    Female.checked=false
+    Course.selectedIndex = 0
+    Email.value = ""

@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    color: black;
+}
+.mainBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    margin: 5vh auto;
+    max-width: 90%;
+    color: white;
+}
+.mainBox__form {
+    background: rgb(114, 114, 227);
+    border: double black 2px;
+    padding: 10px;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+.mainBox__table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mainBox__table__Data th {
+    padding: 15px;
+    vertical-align: top;
+    width: 30%;
+    text-align: center;
+    color: black;
+}
+
+.mainBox__table__Data td{
+    padding: 10px;
+    width: 70%;
+}
+
+.mainBox__btn {
+    background: rgb(238, 117, 137);
+    color: white;
+    width: 100%;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+
+.table2{
+    display: block;
+    width: 80vh;
+    margin: 5px auto;
+}
+.table2__content {
+    border: double black 2px;
+    background: rgb(114, 114, 227);
+    color: white;
+    width: 100%;
+    border-collapse: collapse;
+}
+.table2__content th, .table2__content tb{
+    padding: 10px;
+    /* border: 1px solid black; */
+    text-align: left;
+}
+#tableHead tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.2);
+}
+#studentTableBody tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#studentTableBody tr:last-child {
+    border-bottom: none; /* No border for the last row */
+}
+
+/* Style for the delete button */
+.delete-btn {
+    background-color: rgb(220, 53, 69); /* Red color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.delete-btn:hover {
+    background-color: rgb(194, 45, 59);
+}
